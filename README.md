@@ -1,1 +1,1 @@
-# gaussian_embeddings
+# gaussian_word_embeddings
