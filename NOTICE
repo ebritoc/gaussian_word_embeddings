@@ -1,0 +1,17 @@
+ This work is based on word2vec (https://code.google.com/archive/p/word2vec/).
+ 
+ The learning method implemented in learn.c is based on word2vec.c after the following modifications:
+ - The network weights (syn_0 and syn_1) are extended so that they can contain a diagonal covariance matrix.
+ - The gradient calculations were adapted according to a max-margin loss function with either Expected Likelihood energy or KL divergence energy.
+ - All weight values are now randomly initizalized.
+ - Introduction of an adaptative learning rate to each weight value (transition from SGD to AdaGrad).
+ - Introduction of mini-batch learning with variable size. The size of the batch can be determined by the user.
+ - Removal of all non-used features for our model such as the construction of a Huffman tree with the vocabulary and the K-means algorithm.
+ 
+ Modifications of distance.c:
+- The tool now processes the embeddings containing a covariance matrix.
+- The distance between two embeddings can be computed not only by means of cosine distance but also with the expected likelihood energy.
+
+The tool specificity.c is derived from distance.c after the following modifications:
+- It finds now the 100 nearest embeddings.
+. It orders the found embeddings by descending variance. 
