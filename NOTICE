@@ -14,4 +14,4 @@
 
 The tool specificity.c is derived from distance.c after the following modifications:
 - It finds now the 100 nearest embeddings.
-. It orders the found embeddings by descending variance. 
+- It orders the found embeddings by descending variance. 
