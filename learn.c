@@ -667,7 +667,7 @@ int main(int argc, char **argv) {
     printf("\t-epsilon <int>\n");
     printf("\t\tRidge added in the adagrad update within sqrt; default is 0.1\n");
     printf("\nExamples:\n");
-    printf("./word2vec -train data.txt -output vec.txt -size 200 -window 5 -sample 1e-4 -binary 0 -iter 3\n\n");
+    printf("./learn -train data.txt -output vec.txt -size 200 -window 5 -sample 1e-4 -binary 0 -iter 3\n\n");
     return 0;
   }
   output_file[0] = 0;
