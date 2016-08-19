@@ -73,7 +73,7 @@ int main(int argc, char **argv) {
   int i, cos=0;
   struct Stats topN[N];
   if (argc < 2) {
-    printf("Usage: ./distance <FILE>\nwhere FILE contains word projections in the BINARY FORMAT\n");
+    printf("Usage: ./specificity <FILE>\nwhere FILE contains word projections in the BINARY FORMAT\n");
     return 0;
   }
   strcpy(file_name, argv[1]);
