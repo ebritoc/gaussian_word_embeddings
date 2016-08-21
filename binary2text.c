@@ -55,7 +55,7 @@ int main(int argc, char **argv) {
     printf("\t 0 drops the header of the resulting file; default is 1\n");
     printf("\t-sigma <int>\n");
     printf("\t 0 drops the covariance matrix of the embeddings; default is 1\n");
-    printf("\t-sep_mat <int>\n");
+    printf("\t-sep-mat <int>\n");
     printf("\t 1 generates different files for the mean and for the covariance matrix; default is 0\n");
     return 0;
   }
